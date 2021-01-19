@@ -25,6 +25,12 @@
                 color: black;
                 transition: 350ms;
             }
+            &:nth-child(7){
+                color: $btn-color;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }        
     }
     .header-middle{

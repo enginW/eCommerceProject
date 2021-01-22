@@ -653,9 +653,8 @@ main .story .story-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -732,6 +731,22 @@ main .gallery .gallery-all .gallery-left {
   overflow: hidden;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main .gallery .gallery-all .gallery-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .gallery .gallery-all .gallery-left img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 600ms;
+  transition: 600ms;
 }
 
 main .gallery .gallery-all .gallery-middle {
@@ -757,6 +772,22 @@ main .gallery .gallery-all .gallery-middle .gallery-middle-item-1 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   margin-left: 2.5%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main .gallery .gallery-all .gallery-middle .gallery-middle-item-1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .gallery .gallery-all .gallery-middle .gallery-middle-item-1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 600ms;
+  transition: 600ms;
 }
 
 main .gallery .gallery-all .gallery-middle .gallery-middle-item-2 {
@@ -766,14 +797,47 @@ main .gallery .gallery-all .gallery-middle .gallery-middle-item-2 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   margin-left: 2.5%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main .gallery .gallery-all .gallery-middle .gallery-middle-item-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .gallery .gallery-all .gallery-middle .gallery-middle-item-2 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 600ms;
+  transition: 600ms;
 }
 
 main .gallery .gallery-all .gallery-right {
   width: 25%;
   height: 200px;
   overflow: hidden;
+  border: 1px solid red;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
           clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main .gallery .gallery-all .gallery-right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .gallery .gallery-all .gallery-right img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 600ms;
+  transition: 600ms;
 }
 
 /*Fonts*/
@@ -837,5 +901,50 @@ ul, li {
 
 .right-sticky .right-sticky-bar i:hover {
   color: black;
+}
+
+.content-banner {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.content-banner .brand-banner {
+  width: 60%;
+  height: 222px;
+  border: 1px solid #ff6000;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.content-banner .brand-banner .banner-logo {
+  max-width: 950px;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.content-banner .brand-banner .banner-logo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-banner .brand-banner .banner-logo img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.content-banner .brand-banner .banner-id {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

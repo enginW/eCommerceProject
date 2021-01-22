@@ -63,3 +63,38 @@ ul,li{
         }
     }
 }
+.content-banner{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    .brand-banner{
+        width: 60%;
+        height: 222px;
+        border: 1px solid $btn-color;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        .banner-logo{
+            max-width: 950px;
+            max-height: 180px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                &:hover{
+                    transform: scale(1.03);
+                    transition: 600ms;
+                }
+            }
+        }
+        .banner-id{
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 20px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}

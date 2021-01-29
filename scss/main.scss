@@ -19,7 +19,6 @@
 }
 body{
     font-family: $first-font;
-    overflow-x:hidden;
 }
 a{
     text-decoration: none;
@@ -64,4 +63,98 @@ ul,li{
 }
 .mr{
     margin-right: 10px;
+}
+footer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 70px;
+    background: linear-gradient(0deg, rgba(241,241,241,1) 35%, rgba(255,255,255,1) 100%);
+    padding: 70px;
+    .footer-top{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        .footer-top-left{
+            width: 25%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            h4{
+                font-size: 23px;
+                margin-bottom: 20px;
+            }
+            a{
+                color:$foggy-gray;
+                font-size: 14px;
+                padding: 5px;
+                margin-bottom: 5px;
+            }
+        }
+        .footer-top-bottom{
+            width: 25%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            h4{
+                font-size: 23px;
+                margin-bottom: 20px;
+            }
+            a{
+                color:$foggy-gray;
+                font-size: 14px;
+                padding: 5px;
+                margin-bottom: 5px;
+            }
+        }
+        .footer-top-right{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            h4{
+                font-size: 23px;
+                margin-bottom: 20px;
+            }
+            .footer-top-right-links{
+                width: 100%;
+                display: flex;
+                height: auto;
+                justify-content: space-between;
+            }
+            .footer-top-right-left{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                a{
+                    color:$foggy-gray;
+                    font-size: 14px;
+                    padding: 4px;
+                    margin-bottom: 4px;
+                }
+            }
+            .footer-top-right-middle{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                a{
+                    color:$foggy-gray;
+                    font-size: 14px;
+                    padding: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+            .footer-top-right-right{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                a{
+                    color:$foggy-gray;
+                    font-size: 14px;
+                    padding: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
 }

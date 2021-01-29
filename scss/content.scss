@@ -280,6 +280,11 @@ main{
                     border-radius: 5px;
                     background-color: $btn-color;
                     color: white;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: white;
+                        color: $btn-color;
+                    }
                 }
             }     
     }

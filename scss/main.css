@@ -1048,6 +1048,12 @@ main .card .main-content .chart-btn {
   border-radius: 5px;
   background-color: #ff6000;
   color: white;
+  cursor: pointer;
+}
+
+main .card .main-content .chart-btn:hover {
+  background-color: white;
+  color: #ff6000;
 }
 
 main .big-grid-banner {
